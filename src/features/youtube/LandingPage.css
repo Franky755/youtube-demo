@@ -1,0 +1,17 @@
+.landing-page-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+
+  width: 90%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.grid-item{
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.video-item{
+  border-radius: 20px;
+}
