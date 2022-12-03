@@ -15,7 +15,7 @@ function App() {
   //call youtube Api
   useEffect(() => {
     const youtubeApi = async () => {
-      const res = await fetch(`https://www.googleapis.com/youtube/v3/search?key=AIzaSyCuoMHRgZi9eLAhL8grL15zoxMGzElM3wA&q=${searchText}&part=snippet&maxResults=25`)
+      const res = await fetch(`https://www.googleapis.com/youtube/v3/search?key=AIzaSyD0F54VU3yB-nLOCqmWcIX7_j14GnC7GoE&q=${searchText}&part=snippet&maxResults=25`)
         .then((res) => res.json());
       setSearchData(res.items);
     }

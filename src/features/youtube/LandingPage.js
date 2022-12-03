@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './LandingPage.css';
+import WebFont from 'webfontloader';
 
 const LandingPage = ({ searchData }) => {
 
-  console.log(searchData)
+  //font chu
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ['Roboto', 'Chilanka']
+      }
+    })
+  }, [])
 
   return (
     <div className='landing-page-container'>
       {searchData.map(item => (
         <div className='video-list grid-item'>
-          <div className='video-box'>
+          <div className='video-box '>
             <iframe
-            className='video-item'
+              className='video'
               width="560" height="315"
               src={`https://www.youtube.com/embed/${item.id.videoId}`}
               title="YouTube video player"

@@ -9,9 +9,9 @@ import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 const SearchForm = ({ handleSearching, inputSearchText, setInputSearchText }) => {
 
   return (
-    <>
+    <div className='header-container'>
       <form onSubmit={handleSearching} className='form-search'>
-        <label className='label-search'> <FontAwesomeIcon className='youtube' icon={faYoutube}/></label>
+        <label className='label-search'> <FontAwesomeIcon className='youtube-icon' icon={faYoutube} /></label>
         <input
           type='text'
           className='search-input'
@@ -27,7 +27,16 @@ const SearchForm = ({ handleSearching, inputSearchText, setInputSearchText }) =>
         >Search
         </button>
       </form>
-    </>
+      <div className='user-info'>
+        <img
+          className='user-ava'
+          src="https://hieuungchu.com/wp-content/uploads/2020/06/Yoona.jpg"
+          title='Yoona'
+        >
+        </img>
+        <div className='user-name'>Hi, <a href=''>Yoona</a></div>
+      </div>
+    </div>
   )
 }
 

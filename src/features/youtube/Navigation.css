@@ -27,5 +27,10 @@
   cursor: pointer;
   font-size: 1.2rem;
   font-weight: 600;
+}
 
+.nav-item:hover{
+  background-color: black;
+  color: #fff;
+  text-decoration: underline;
 }
