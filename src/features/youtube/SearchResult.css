@@ -47,7 +47,7 @@
 }
 
 @media only screen and (max-width: 1366px) {
-  .search-result-container{
+  .search-result-container {
     grid-template-columns: auto;
   }
 }
@@ -57,7 +57,8 @@
     width: 400px;
     height: 280px;
   }
-  .searched-content-box{
+
+  .searched-content-box {
     width: 380px;
   }
 
