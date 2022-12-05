@@ -14,31 +14,32 @@ const LandingPage = ({ searchData }) => {
   }, [])
 
   return (
-    <div className='landing-page-container'>
-      {searchData.map(item => (
-        <div className='video-list grid-item'>
-          <div className='video-box '>
+    <div className='landing-page-container grid-container'>
+      {searchData.map((item, index) => (
+        <div className='lan-item grid-item' key={index}>
+          <div className='land-item'>
             <iframe
               className='video'
               width="560" height="315"
               src={`https://www.youtube.com/embed/${item.id.videoId}`}
               title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              frameBorder="0"
+              allow="clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              showinfo='0'
             >
             </iframe>
-            <div className='content-box'>
-              <div className="cursor item-title">
+            <div className='land-content-box'>
+              <div className="cursor video-item-title">
                 {item.snippet.title}
               </div>
-              <div className="cursor item-publishTime">
+              <div className="cursor video-item-publishTime">
                 {item.snippet.publishTime}
               </div>
-              <div className="cursor item-channel">
+              <div className="cursor video-item-channel">
                 {item.snippet.channelTitle}
               </div>
-              <div className="cursor item-desciption">
+              <div className="cursor video-item-desciption">
                 {item.snippet.description}
               </div>
             </div>

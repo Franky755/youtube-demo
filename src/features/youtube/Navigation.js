@@ -8,15 +8,14 @@ const Navigation = () => {
         <li className='nav-item nav-all'>All</li>
         <li className='nav-item'>Live</li>
         <li className='nav-item'>Music</li>
-        <li className='nav-item'>Play</li>
+        <li className='nav-item'>News</li>
         <li className='nav-item'>Game</li>
-        <li className='nav-item'>Audio Book</li>
+        <li className='nav-item'>Russia-UKr</li>
         <li className='nav-item'>Vina House</li>
         <li className='nav-item'>World Cup 2022</li>
         <li className='nav-item'>Deep house</li>
         <li className='nav-item'>Learn React</li>
       </ul>
-
     </div>
   )
 }

@@ -5,6 +5,7 @@ import LandingPage from './features/youtube/LandingPage';
 import Navigation from './features/youtube/Navigation';
 import SearchForm from './features/youtube/SearchForm';
 import SearchResult from './features/youtube/SearchResult';
+import SideBar from './features/youtube/SideBar';
 
 function App() {
   const [searchText, setSearchText] = useState();
@@ -45,9 +46,12 @@ function App() {
         setInputSearchText={setInputSearchText}
       />
 
+      {/* <SideBar /> */}
+
       {!searchText &&
         <Navigation />
       }
+
       {!searchText &&
         <LandingPage
           searchData={searchData}

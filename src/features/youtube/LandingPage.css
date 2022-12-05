@@ -1,33 +1,27 @@
 .landing-page-container {
   margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1920px;
-  height: auto;
-  justify-content: space-evenly;
-  row-gap: 20px;
+  padding: 0 30px;
 }
 
-.grid {
+.grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-
+  justify-content: space-around;
+  row-gap: 20px;
+  column-gap: 30px;
+  width: 100%;
+  right: 0;
 }
 
-.video-list {
+.land-list {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-
 }
 
-.video-box {
+.land-box {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -35,7 +29,7 @@
   align-items: center;
 }
 
-.video-content-box {
+.land-content-box {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -47,14 +41,14 @@
 
 .video {
   border-radius: 10px;
-  width: 320px;
-  height: 180px;
+  width: 360px;
+  height: 190px;
 }
 
 .video-item-title {
   font-size: 1.4rem;
   font-weight: 700;
-  height: 50px;
+  height: 48px;
   margin-top: 10px;
   margin-bottom: 5px;
   text-overflow: ellipsis;
@@ -70,17 +64,17 @@
 .video-item-desciption {
   text-overflow: ellipsis;
   overflow: hidden;
-  max-height: 30px;
+  max-height: 35px;
 }
 
-@media only screen and (max-width: 1024px) {
-  .grid {
+@media only screen and (max-width: 1366px) {
+  .grid-container {
     grid-template-columns: auto auto;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .grid {
+  .grid-container {
     grid-template-columns: auto;
   }
 }

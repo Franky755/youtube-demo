@@ -14,18 +14,18 @@ const SearchResult = ({ searchText, setSearchText, searchData, setSearchData }) 
         {searchData && searchData.map((searchData, index) => (
           <div className='result-box' key={index}>
             {/* video-contents */}
-            <div className='video-box'>
+            <div className='search-video-box'>
             <iframe
-              className='video-search-result'
+              className='searched-video'
               width="560" height="315"
               src={`https://www.youtube.com/embed/${searchData.id.videoId}`}
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             >
             </iframe>
-            <div className='content-box'>
+            <div className='searched-content-box'>
               <div className="cursor item-title">
                 {searchData.snippet.title}
               </div>

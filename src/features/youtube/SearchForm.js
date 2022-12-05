@@ -10,8 +10,9 @@ const SearchForm = ({ handleSearching, inputSearchText, setInputSearchText }) =>
 
   return (
     <div className='header-container'>
+      <div><a href='' title='YouTube'><FontAwesomeIcon className='youtube-icon' icon={faYoutube} /></a></div>
       <form onSubmit={handleSearching} className='form-search'>
-        <label className='label-search'> <FontAwesomeIcon className='youtube-icon' icon={faYoutube} /></label>
+        <label className='label-search'> </label>
         <input
           type='text'
           className='search-input'
